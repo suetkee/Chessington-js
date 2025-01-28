@@ -10,6 +10,7 @@ export default class Pawn extends Piece {
 
     getAvailableMoves(board) {
         let location = board.findPiece(this)
+        let location2 = board.findPiece(blockingPiece)
         let moves = [];
         // add another if to move 2 place 1st go
         if (this.player === Player.WHITE) {
