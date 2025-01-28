@@ -10,7 +10,7 @@ import Queen from '../../engine/pieces/queen';
 import King from '../../engine/pieces/king';
 
 let boardUI;
-let board;
+let board ; 
 
 function squareToPositionString(square) {
     const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
