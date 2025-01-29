@@ -34,8 +34,6 @@ describe('Pawn', () => {
             moves.should.deep.include.members([Square.at(2, 7), Square.at(3, 7)]);
         });
 
-<<<<<<< HEAD
-=======
         it('cannot move at the top of the board', () => {
             const pawn = new Pawn(Player.WHITE);
             board.setPiece(Square.at(7, 3), pawn);
@@ -87,7 +85,6 @@ describe('Pawn', () => {
             moves.should.not.deep.include(Square.at(5, 3));
         });
 
->>>>>>> c0f07d1 (Added a test that pawns can take pieces)
     });
 
     describe('black pawns', () => {
@@ -116,8 +113,6 @@ describe('Pawn', () => {
             moves.should.deep.include.members([Square.at(4, 7), Square.at(5, 7)]);
         });
 
-<<<<<<< HEAD
-=======
         it('cannot move at the bottom of the board', () => {
             const pawn = new Pawn(Player.BLACK);
             board.setPiece(Square.at(0, 3), pawn);
@@ -168,7 +163,6 @@ describe('Pawn', () => {
 
             moves.should.not.deep.include(Square.at(3, 3));
         });
->>>>>>> c0f07d1 (Added a test that pawns can take pieces)
     });
 
     it('cannot move if there is a piece in front', () => {
